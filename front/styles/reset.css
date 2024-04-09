@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    font-size: 16px;
+}
+
+/* reset.css */
+
+/* Box sizing rules */
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  /* Remove default margins */
+  body, h1, h2, h3, h4, h5, h6,
+  p, ol, ul, li, dl, dt, dd,
+  figure, figcaption, blockquote, pre {
+    margin: 0;
+  }
+  
+  /* Remove default padding */
+  button, input, select, textarea {
+    padding: 0;
+  }
+  
+  /* Remove default border */
+  img, embed, object, iframe, audio, video {
+    border: 0;
+  }
+  
+  /* Set default font size and family */
+  body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Set default line height */
+  body {
+    line-height: 1.5;
+  }
+  
+  /* Set default list styles */
+  ol, ul {
+    list-style: none;
+  }
+  
+  /* Set default table styles */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Set default form element styles */
+  input, button, select, textarea {
+    background-color: transparent;
+    color: inherit;
+    font: inherit;
+  }
+  
+  /* Set default heading styles */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  /* Set default link styles */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Add more reset styles as needed */
