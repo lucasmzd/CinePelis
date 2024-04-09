@@ -8,7 +8,7 @@ nav ul {
 }
 
 nav li {
-        float: left;
+        float: inline-end;
 }
 
 nav li a {
@@ -21,5 +21,63 @@ nav li a {
 
 nav li a:hover {
     background-color: #111;
+}
+/* estilos header */
+h1 {
+    display: inline;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+}
+/* estilos main */
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0e0d12;
+    padding: 40px 8%;
+    display: grid;
+    align-items: center;
+}
+
+main #sectionPeliculas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 20px;
+}
+
+#sectionPeliculas .articlePelicula {
+    position: relative;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.articlePelicula img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.articlePelicula .divPelicula {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), #000000);
+    padding: 110% 4% 0 4%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#sectionPeliculas .articlePelicula:hover img {
+    transform: scale(1.05);
+}
+
+#sectionPeliculas .articlePelicula:hover .divPelicula {
+    opacity: 1;
 }
 
