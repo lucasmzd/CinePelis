@@ -39,6 +39,7 @@ main {
     padding: 40px 8%;
     display: grid;
     align-items: center;
+    font-size: 12px;
 }
 
 main #sectionPeliculas {
@@ -56,6 +57,11 @@ main #sectionPeliculas {
     overflow: hidden;
 }
 
+.articlePelicula {
+    height: 370px;
+    width: 270px;
+}
+
 .articlePelicula img {
     width: 100%;
     height: 100%;
@@ -68,7 +74,7 @@ main #sectionPeliculas {
     position: absolute;
     bottom: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.2), #000000);
-    padding: 110% 4% 0 4%;
+    padding: 80% 4% 0 4%;
     opacity: 0;
     transition: all 0.5s;
 }
@@ -81,3 +87,7 @@ main #sectionPeliculas {
     opacity: 1;
 }
 
+.divPelicula_nombre {
+    padding-bottom: 10px;
+    font-size: 17px;
+}
