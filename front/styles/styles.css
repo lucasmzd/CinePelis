@@ -67,3 +67,14 @@ main #sectionPeliculas {
     padding-bottom: 10px;
     font-size: 17px;
 }
+
+h2 {
+    margin: 20px 0px 20px 0px;
+    color: #fff;
+}
+
+footer {
+    background-color: #0e0d12;
+    color: #fff;
+    text-align:center
+}
