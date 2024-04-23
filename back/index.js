@@ -1,5 +1,10 @@
+require("dotenv").config()
 const app = require ("./src/app")
+const dbCon = require ("./src/config/dbCon")
 
-const PORT = 3000
+const { PORT } = process.env
 
-app.listen(PORT, ()=>console.log(`server is listening on port ${PORT}`))
+dbCon()
+.then(()=> app.listen(PORT, ()=>console.log(`server is listening on port ${PORT}`)))
+.catch((err)=> console.log("Falló la conexion" + err.message))
+
