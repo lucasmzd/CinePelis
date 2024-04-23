@@ -1,6 +1,5 @@
 const Movie = require ("../models/Movie")
 
-
 module.exports = {
   getMovies: async () => {
     try {
@@ -11,9 +10,3 @@ module.exports = {
     }
   }
 }
-
-// module.exports = {
-//   getMovies: () => {
-//     return Movie;
-//   }
-// }
