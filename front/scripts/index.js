@@ -3,7 +3,7 @@ const axios = require("axios");
 
 const renderPeliculas = async () => {
     try {
-        const result = await axios.get("http://localhost:3000/movies");
+        const result = await axios.get("http://localhost:3000/Movies");
         renderFilms(result.data);
     } catch (error) {
         console.log(error.message);
@@ -11,6 +11,3 @@ const renderPeliculas = async () => {
 }
 
 renderPeliculas();
-
-
-
