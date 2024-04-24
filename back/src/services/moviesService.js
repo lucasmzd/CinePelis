@@ -8,5 +8,13 @@ module.exports = {
     } catch (error) {
         throw error.message
     }
+  },
+  createMovie: async (movie) => {
+    try {
+      const newMovie = await Movie.create(movie)
+      return newMovie
+    } catch (error) {
+      return error.message
+    }
   }
 }
