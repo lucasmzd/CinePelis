@@ -26,10 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const rateInputValue = rateInput.value;
         const posterInput = document.getElementById("poster");
         const posterInputValue = posterInput.value;
-
-        //testers
-        //const currentDate = new Date().getFullYear()
-        //console.log(currentDate)
         
         const genresTrue = [];
 
@@ -54,7 +50,6 @@ const enviarDatos = async (form) => {
     
     const agregar = document.getElementById("enviarBtn");
     agregar.addEventListener("click", inputs);
-
 
 
     const clearValues = ()=>{
