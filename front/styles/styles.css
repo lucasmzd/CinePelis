@@ -14,12 +14,17 @@ body {
   
 main {
     width: 100%;
-    min-height: 100vh;
     background-color: #0e0d12;
-    padding: 40px 8%;
+    padding-right: 8%;
+    margin-bottom: 20px;
+    padding-left: 8%;
     display: grid;
     align-items: center;
     font-size: 12px;
+}
+
+.carrusel {
+    margin-top: 20px;
 }
 
 main #sectionPeliculas {
