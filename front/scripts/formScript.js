@@ -21,12 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const rateInput = document.getElementById("rate");
         const posterInput = document.getElementById("poster");
 
-        const titleInputValue = titleInput.value;
-        const yearInputValue = yearInput.value;
-        const directorInputValue = directorInput.value;
-        const durationInputValue = durationInput.value;
-        const rateInputValue = rateInput.value;
-        const posterInputValue = posterInput.value;
+        const titleInputValue = titleInput.value.trim();
+        const yearInputValue = yearInput.value.trim();
+        const directorInputValue = directorInput.value.trim();
+        const durationInputValue = durationInput.value.trim();
+        const rateInputValue = rateInput.value.trim();
+        const posterInputValue = posterInput.value.trim();
 
         if (!titleInputValue || !yearInputValue || !directorInputValue || !durationInputValue || !rateInputValue || !posterInputValue) {
             alert("Por favor llene todos los campos.");
